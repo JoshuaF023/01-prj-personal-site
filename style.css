@@ -232,6 +232,62 @@ li {
   margin-right: 8px;     /* Space between icon and skill name */
 }
 
+/* Hobbies section styles */
+.section-hobbies {
+  background-color: #f3e5f5; /* Very light purple */
+  padding: 30px 20px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-hobbies > div {
+  max-width: 600px;
+  width: 90%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: inherit;
+  color: #4b006e;
+  text-align: center;
+}
+
+/* Style the hobbies list */
+.hobbies-list {
+  list-style: none; /* No bullets */
+  padding: 0;
+  display: flex; /* Show hobbies in a row */
+  gap: 28px; /* Space between hobbies */
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap on small screens */
+  margin: 0;
+}
+
+/* Style each hobby item */
+.hobbies-list li {
+  display: flex;
+  flex-direction: column; /* Stack image and label */
+  align-items: center;
+  background: #ede7f6;
+  border-radius: 12px;
+  padding: 16px 12px;
+  box-shadow: 0 2px 8px rgba(75,0,110,0.07);
+  min-width: 100px;
+}
+
+/* Style for hobby images */
+.hobby-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 2px solid #b39ddb;
+}
+
 /* Responsive: stack image and text on small screens */
 @media (max-width: 700px) {
   .about-container {
