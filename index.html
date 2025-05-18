@@ -6,6 +6,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Site header with navigation links -->
+  <header class="site-header">
+    <!-- Navigation menu -->
+    <nav>
+      <!-- Each link jumps to a section on the page -->
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Add an invisible anchor at the top for the Home link -->
+  <a id="top"></a>
+
+  <!-- Main heading for your website -->
+  <h1 class ="site-header">Welcome to My Personal Website</h1>
+
+  <!-- About Me section -->
+  <section id="about" class="section-about">
+    <div class="about-container">
+      <!-- Profile image above the text -->
+      <img src="img/me.png" alt="A photo of me" class="about-img">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          <!-- Write a short introduction about yourself here -->
+          Hello! My name is Joshua Frederick and I'm a web development student excited to learn and build new projects. Thank you for visiting my personal website! I am currently learning HTML, CSS, and JavaScript. I am passionate about creating user-friendly and visually appealing websites. In my free time, I enjoy exploring new technologies and working on personal projects to enhance my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="section-skills">
+    <div>
+      <h2>Skills</h2>
+      <!-- List your skills using an unordered list -->
+      <ul>
+        <li><span class="skill-icon" aria-label="HTML">🔤</span> HTML</li>
+        <li><span class="skill-icon" aria-label="CSS">🎨</span> CSS</li>
+        <li><span class="skill-icon" aria-label="JavaScript">💻</span> JavaScript (learning)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="section-contact">
+    <div>
+      <h2>Contact</h2>
+      <!-- Add your email or a simple contact message -->
+      <p>
+        You can reach me at: Jfrederick2022@fau.edu or through 954-501-4444.
+      </p>
+    </div>
+  </section>
 </body>
 </html>

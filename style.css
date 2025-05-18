@@ -1,1 +1,251 @@
 /* Add you CSS here */
+
+/* Add some space around the whole page */
+body {
+  font-family: Arial, sans-serif; /* Use a clean, easy-to-read font */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3fa; /* Light background for contrast */
+}
+
+/* Style the main heading */
+h1 {
+  text-align: center; /* Center the heading */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
+  color: #4b006e; /* Dark purple */
+}
+
+.site-header {
+  background-color: #673ab7; /* Purple */
+  color: white; /* White text */
+  padding: 10px;
+  margin-top: 0px;
+  text-align: center;
+  border-bottom: none; /* Remove any border at the bottom */
+}
+
+/* Style the navigation bar links */
+.site-header nav {
+  text-align: center; /* Center the navigation links */
+  margin-top: 20px;
+ 
+}
+
+/* Style each navigation link */
+.site-header nav a {
+  display: inline-block; /* Place links side by side */
+  color: #fff; /* White text */
+  background-color: #7c4dff; /* Purple background */
+  padding: 4px 18px; /* Less space above and below the text */
+  margin: 0 6px; /* Space between links */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  transition: background 0.2s; /* Smooth color change on hover */
+}
+
+/* Change color when hovering over a link */
+.site-header nav a:hover {
+  background-color: #4b006e; /* Darker purple on hover */
+}
+
+/* Add space and color to the About Me section */
+.section-about {
+  background-color: #e0c3fc; /* Light purple */
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 0; /* Remove top margin */
+}
+
+/* Add space and a different purple to the Skills section */
+.section-skills {
+  background-color: #b39ddb; /* Medium purple */
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Add space and a darker purple to the Contact section */
+.section-contact {
+  background-color: #9575cd; /* Darker purple */
+  padding: 30px 20px;
+  margin: 20px auto 40px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  color: #fff; /* White text for contrast */
+}
+
+/* Make each section fill most of the screen and stretch across the page */
+.section-about,
+.section-skills,
+.section-contact {
+  width: 100%; /* Section stretches across the page */
+  min-height: 60vh; /* Each section takes up at least 60% of the viewport height */
+  display: flex; /* Use flex to center content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 0; /* Remove extra padding from the section itself */
+  margin: 0; /* Remove margin so sections touch each other */
+  border-radius: 0; /* Remove rounded corners for full-width look */
+}
+
+/* Set a larger min-height for About, but smaller for Skills and Contact */
+.section-about {
+  min-height: 60vh; /* About section stays tall */
+}
+
+.section-skills{
+  min-height: 30vh; 
+}
+
+.section-contact {
+  min-height: 10vh; 
+}
+
+.section-contact {
+  text-align: center;
+}
+
+
+/* Keep the content inside each section centered and readable */
+.section-about > div,
+.section-skills > div,
+.section-contact > div {
+  max-width: 600px;
+  width: 90%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 10px; /* Add a little rounding to the content box */
+  background: inherit; /* Use the section's background color */
+  color: inherit; /* Use the section's text color */
+}
+
+
+/* Make section headings stand out */
+section h2 {
+  margin-top: 0;
+  color: #4b006e;
+}
+
+/* Style links in the contact section */
+.section-contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Optional: Add a little space between list items */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Container for image and text in About Me */
+.about-container {
+  display: flex; /* Place image and text side by side */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  gap: 18px;              /* Space between image and text */
+  padding: 40px 0; /* Add more vertical space */
+}
+
+/* Make the text area take up more space */
+.about-text {
+  flex: none;
+  min-width: 200px;
+  font-size: 1.15rem; /* Slightly larger text */
+  line-height: 1.7; /* More space between lines */
+  color: #3a2257; /* Slightly darker text for readability */
+  background: none;    /* Remove background */
+  padding: 0;          /* Remove padding */
+  border-radius: 0;    /* Remove border radius */
+  box-shadow: none;    /* Remove shadow */
+  text-align: center;  /* Center the text */
+}
+
+/* Style for the profile image */
+.about-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #b39ddb;
+  box-shadow: 0 2px 8px rgba(75,0,110,0.12);
+  background: #fff;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Improve the Skills section visuals */
+.section-skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 32px 0;
+}
+
+/* Style the skills heading */
+.section-skills h2 {
+  margin-bottom: 18px;
+  font-size: 2rem;
+  color: #4b006e;
+}
+
+/* Style the skills list */
+.section-skills ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  display: flex; /* Display skills in a row */
+  gap: 18px; /* Space between skills */
+  flex-wrap: wrap; /* Wrap to next line on small screens */
+  justify-content: center;
+  margin: 0;
+}
+
+/* Style each skill item */
+.section-skills li {
+  background: #ede7f6; /* Light purple background */
+  color: #4b006e;      /* Dark purple text */
+  padding: 14px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(75,0,110,0.07);
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+/* Add a hover effect for each skill */
+.section-skills li:hover {
+  background: #d1c4e9;
+}
+
+/* Style for skill icons in the skills section */
+.skill-icon {
+  font-size: 1.5em;      /* Make the icon a bit larger */
+  vertical-align: middle;/* Align icon with text */
+  margin-right: 8px;     /* Space between icon and skill name */
+}
+
+/* Responsive: stack image and text on small screens */
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 24px 0;
+  }
+  .about-text {
+    padding: 18px 12px;
+    font-size: 1rem;
+  }
+  .about-img {
+    width: 120px;
+    height: 120px;
+  }
+}
